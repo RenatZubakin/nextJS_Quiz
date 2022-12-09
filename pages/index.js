@@ -1,9 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from "next/link";
+import {Provider} from "react-redux";
+import store from "../store/store";
 
 export default function Home() {
   return (
+
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
@@ -22,10 +26,10 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <Link href="/Quiz" className={styles.card}>
+            <h2>Quiz Catalog &rarr;</h2>
+            <p>Страница с выбором тестов</p>
+          </Link>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h2>Learn &rarr;</h2>
@@ -67,5 +71,6 @@ export default function Home() {
         </a>
       </footer>
     </div>
+
   )
 }

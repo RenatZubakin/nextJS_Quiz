@@ -1,0 +1,38 @@
+.test_header{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 38px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.time_question_number{
+  display: flex;
+}
+
+.test_number, .test_time{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.test_number{
+  margin-right: 33px;
+}
+.image{
+  width: 36px;
+  height: 36px;
+}
+
+.current_quest_number{
+  font-size: 24px;
+  color:#006666;
+}
+
+.test_theme{
+  font-size: 20px;
+}
+
+.logo img{
+  width:60px;
+}
